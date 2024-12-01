@@ -26,20 +26,27 @@ export default function TabLayout() {
           default: {},
         }),
       }}>
+   
+    
       <Tabs.Screen
-        name="index"
+        name="past-appointments"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
+          title: 'Geçmiş Randevular',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+
+      <Tabs.Screen
+        name="appointments"
+        options={{
+          title: 'Randevu Al',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+
+      />
+      
+
+    
     </Tabs>
   );
 }
